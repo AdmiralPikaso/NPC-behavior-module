@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/arena/Arena.tscn" id="1_arena"]
+
+[node name="ArenaExperimentDefensiveBot" instance=ExtResource("1_arena")]
+Mode = 1
+RoundsPerTactic = 30
+DefensiveBot = true

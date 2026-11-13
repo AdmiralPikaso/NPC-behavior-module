@@ -1,0 +1,351 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/Arena/ArenaDecor.cs" id="1_a4tbo"]
+[ext_resource type="Texture2D" path="res://assets/Synty/PolygonDarkFantasy/Textures/Misc/PolygonDarkFantasy_Stone_01.png" id="2_7fndu"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Tomb_01.tscn" id="3_ucm1q"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Building/SM_Bld_Pillar_04.tscn" id="4_56nx5"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Statue_People_03.tscn" id="5_f4t41"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Crate_02.tscn" id="6_47w1v"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Building/SM_Bld_Pillar_01.tscn" id="7_w5k27"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Base/SM_Bld_Base_Wall_01.tscn" id="8_6tt3t"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Base/SM_Bld_Base_Roof_Cap_01.tscn" id="9_6nfhm"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Base/SM_Bld_Base_Pillar_02.tscn" id="10_5md2a"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Brazier_01.tscn" id="11_hw0nd"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Grunge_01.tscn" id="12_nwrdg"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Grunge_03.tscn" id="13_o7lbc"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Moss_01.tscn" id="14_q55b1"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Moss_03.tscn" id="15_seilp"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Plant_Grass_Patch_01.tscn" id="16_xj0i7"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Rock_Cliff_06.tscn" id="17_q76fa"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Tomb_Stone_01.tscn" id="18_t2ujl"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Tomb_Stone_02.tscn" id="19_bh20k"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Tomb_Stone_04.tscn" id="20_she4w"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Tomb_Stone_Basic_01.tscn" id="21_mkj6c"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Environment/SM_Env_Tree_Dead_04.tscn" id="22_khd2k"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Building/SM_Bld_Wall_Window_Huge_02.tscn" id="23_cdkby"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Building/SM_Bld_Ruin_02.tscn" id="24_0mphu"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Building/SM_Bld_Ruin_01.tscn" id="25_gpbym"]
+[ext_resource type="PackedScene" path="res://assets/Synty/PolygonDarkFantasy/Prefabs/Props/SM_Prop_Crypt_01.tscn" id="26_vhmex"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5stq"]
+albedo_color = Color(0.5, 0.47, 0.38, 1)
+albedo_texture = ExtResource("2_7fndu")
+roughness = 0.95
+uv1_scale = Vector3(8, 8, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5dlht"]
+material = SubResource("StandardMaterial3D_q5stq")
+size = Vector2(40, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e47w2"]
+shading_mode = 0
+albedo_color = Color(1, 0.55, 0.18, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_15kev"]
+material = SubResource("StandardMaterial3D_e47w2")
+radius = 0.13
+height = 0.36
+radial_segments = 8
+rings = 4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dyi8v"]
+albedo_color = Color(0.32, 0.31, 0.27, 1)
+albedo_texture = ExtResource("2_7fndu")
+roughness = 0.95
+uv1_scale = Vector3(30, 30, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_stt7k"]
+material = SubResource("StandardMaterial3D_dyi8v")
+size = Vector2(160, 160)
+
+[node name="TestLevelDecor" type="Node3D" unique_id=384123102]
+script = ExtResource("1_a4tbo")
+
+[node name="Floor" type="Node3D" parent="." unique_id=1797579879]
+
+[node name="Ground" type="MeshInstance3D" parent="Floor" unique_id=1521089327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.003, 0)
+mesh = SubResource("PlaneMesh_5dlht")
+
+[node name="Cover" type="Node3D" parent="." unique_id=711613052]
+
+[node name="Block1" type="Node3D" parent="Cover" unique_id=258061709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="Prop_Tomb_01_1" parent="Cover/Block1" unique_id=1057126250 instance=ExtResource("3_ucm1q")]
+transform = Transform3D(1.4747108, 0, 0, 0, 1.1299682, 0, 0, 0, 0.764471, -0.005430438, 0.01242882, -0.0063821594)
+
+[node name="Block2" type="Node3D" parent="Cover" unique_id=1276821184]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, -5, 0, -6)
+
+[node name="Bld_Pillar_04_1" parent="Cover/Block2" unique_id=1777605217 instance=ExtResource("4_56nx5")]
+transform = Transform3D(1.8479583, 0, 0, 0, 0.6666667, 0, 0, 0, 1.8479583, 0, 0, 0)
+
+[node name="Prop_Statue_People_03_1" parent="Cover/Block2" unique_id=106024588 instance=ExtResource("5_f4t41")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 2.1054072, 0)
+
+[node name="Block3" type="Node3D" parent="Cover" unique_id=178773264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 5)
+
+[node name="Prop_Crate_02_1" parent="Cover/Block3" unique_id=475839803 instance=ExtResource("6_47w1v")]
+transform = Transform3D(1.8674443, 0, 0, 0, 1.9859585, 0, 0, 0, 1.8674483, 4.452334e-07, 0, -3.561875e-06)
+
+[node name="Prop_Crate_02_2" parent="Cover/Block3" unique_id=1593456465 instance=ExtResource("6_47w1v")]
+transform = Transform3D(1.6181115, 0, 0.22741127, 0, 1.9859585, 0, -0.22741075, 0, 1.6181152, -4.7964733e-08, 1, -3.1405286e-06)
+
+[node name="Wall1" type="Node3D" parent="Cover" unique_id=1340035779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="Bld_Pillar_01_1" parent="Cover/Wall1" unique_id=1301965627 instance=ExtResource("7_w5k27")]
+transform = Transform3D(0.95227915, 0, 0, 0, 1.0003428, 0, 0, 0, 0.80992323, -3.75, -1.1920929e-07, 0)
+
+[node name="Bld_Pillar_01_2" parent="Cover/Wall1" unique_id=724608397 instance=ExtResource("7_w5k27")]
+transform = Transform3D(0.95227915, 0, 0, 0, 1.0003428, 0, 0, 0, 0.80992323, 0, -1.1920929e-07, 0)
+
+[node name="Bld_Pillar_01_3" parent="Cover/Wall1" unique_id=1082022493 instance=ExtResource("7_w5k27")]
+transform = Transform3D(0.95227915, 0, 0, 0, 1.0003428, 0, 0, 0, 0.80992323, 3.75, -1.1920929e-07, 0)
+
+[node name="Bld_Base_Wall_01_1" parent="Cover/Wall1" unique_id=1801160624 instance=ExtResource("8_6tt3t")]
+transform = Transform3D(1.3000045, 0, 0, 0, 0.9315501, 0, 0, 0, 1.7777779, -3.5, 0, 0)
+
+[node name="Bld_Base_Roof_Cap_01_1" parent="Cover/Wall1" unique_id=1858476578 instance=ExtResource("9_6nfhm")]
+transform = Transform3D(1.2999997, 0, 0, 0, 1.1284645, 0, 0, 0, 1.1441358, -3.5, 2.8131442, 0)
+
+[node name="Bld_Base_Wall_01_2" parent="Cover/Wall1" unique_id=1144392567 instance=ExtResource("8_6tt3t")]
+transform = Transform3D(1.3000045, 0, 0, 0, 0.9315501, 0, 0, 0, 1.7777779, 0.25, 0, 0)
+
+[node name="Bld_Base_Roof_Cap_01_2" parent="Cover/Wall1" unique_id=1482531451 instance=ExtResource("9_6nfhm")]
+transform = Transform3D(1.2999997, 0, 0, 0, 1.1284645, 0, 0, 0, 1.1441358, 0.25, 2.8131442, 0)
+
+[node name="Wall2" type="Node3D" parent="Cover" unique_id=623952040]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10, 0, 0)
+
+[node name="Bld_Pillar_01_4" parent="Cover/Wall2" unique_id=130245834 instance=ExtResource("7_w5k27")]
+transform = Transform3D(0.95227915, 0, 0, 0, 1.0003428, 0, 0, 0, 0.80992323, -3.75, -1.1920929e-07, 0)
+
+[node name="Bld_Pillar_01_5" parent="Cover/Wall2" unique_id=1405476711 instance=ExtResource("7_w5k27")]
+transform = Transform3D(0.95227915, 0, 0, 0, 1.0003428, 0, 0, 0, 0.80992323, 0, -1.1920929e-07, 0)
+
+[node name="Bld_Pillar_01_6" parent="Cover/Wall2" unique_id=1062872702 instance=ExtResource("7_w5k27")]
+transform = Transform3D(0.95227915, 0, 0, 0, 1.0003428, 0, 0, 0, 0.80992323, 3.75, -1.1920929e-07, 0)
+
+[node name="Bld_Base_Wall_01_3" parent="Cover/Wall2" unique_id=295490135 instance=ExtResource("8_6tt3t")]
+transform = Transform3D(1.3000045, 0, 0, 0, 0.9315501, 0, 0, 0, 1.7777779, -3.5, 0, 0)
+
+[node name="Bld_Base_Roof_Cap_01_3" parent="Cover/Wall2" unique_id=1394138508 instance=ExtResource("9_6nfhm")]
+transform = Transform3D(1.2999997, 0, 0, 0, 1.1284645, 0, 0, 0, 1.1441358, -3.5, 2.8131442, 0)
+
+[node name="Bld_Base_Wall_01_4" parent="Cover/Wall2" unique_id=803276644 instance=ExtResource("8_6tt3t")]
+transform = Transform3D(1.3000045, 0, 0, 0, 0.9315501, 0, 0, 0, 1.7777779, 0.25, 0, 0)
+
+[node name="Bld_Base_Roof_Cap_01_4" parent="Cover/Wall2" unique_id=807678447 instance=ExtResource("9_6nfhm")]
+transform = Transform3D(1.2999997, 0, 0, 0, 1.1284645, 0, 0, 0, 1.1441358, 0.25, 2.8131442, 0)
+
+[node name="Torch" type="Node3D" parent="." unique_id=1050833533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3)
+
+[node name="Bld_Base_Pillar_02_1" parent="Torch" unique_id=1839155187 instance=ExtResource("10_5md2a")]
+transform = Transform3D(0.7006041, 0, 0, 0, 0.6283856, 0, 0, 0, 0.7006041, 1.2840972e-06, 0.010732532, 4.280324e-07)
+
+[node name="Prop_Brazier_01_1" parent="Torch" unique_id=1593207601 instance=ExtResource("11_hw0nd")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.0030872943, 1.9, 0)
+cast_shadow = 0
+
+[node name="Flame" type="MeshInstance3D" parent="Torch" unique_id=1441030812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.38, 0)
+cast_shadow = 0
+mesh = SubResource("SphereMesh_15kev")
+
+[node name="Scatter" type="Node3D" parent="." unique_id=272349418]
+
+[node name="Env_Grunge_01_1" parent="Scatter" unique_id=843130483 instance=ExtResource("12_nwrdg")]
+transform = Transform3D(-0.07070908, 0, -0.592386, 0, 0.5965911, 0, 0.592386, 0, -0.07070908, 14.406372, 0.0065690186, -7.7997)
+
+[node name="Env_Grunge_03_1" parent="Scatter" unique_id=1925558892 instance=ExtResource("13_o7lbc")]
+transform = Transform3D(-0.026874864, 0, 0.6820596, 0, 0.6825889, 0, -0.6820596, 0, -0.026874864, -0.26944733, 0.007074448, 3.1777992)
+
+[node name="Env_Moss_01_1" parent="Scatter" unique_id=318372342 instance=ExtResource("14_q55b1")]
+transform = Transform3D(-0.13809328, 0, -0.87626135, 0, 0.88707596, 0, 0.87626135, 0, -0.13809328, 4.1331673, 0.0068984693, 11.459669)
+
+[node name="Env_Moss_03_1" parent="Scatter" unique_id=1531717138 instance=ExtResource("15_seilp")]
+transform = Transform3D(0.745879, 0, -0.40359774, 0, 0.8480723, 0, 0.40359774, 0, 0.745879, -14.269098, 0.008122768, 12.291193)
+
+[node name="Env_Grunge_01_2" parent="Scatter" unique_id=861824512 instance=ExtResource("12_nwrdg")]
+transform = Transform3D(-0.7309485, 0, 0.35387254, 0, 0.81210315, 0, -0.35387254, 0, -0.7309485, -15.524759, 0.009329615, -11.790871)
+
+[node name="Env_Grunge_03_2" parent="Scatter" unique_id=1003929839 instance=ExtResource("13_o7lbc")]
+transform = Transform3D(-0.32797673, 0, 0.59887975, 0, 0.6828072, 0, -0.59887975, 0, -0.32797673, 17.852043, 0.011073192, 11.595142)
+
+[node name="Env_Moss_01_2" parent="Scatter" unique_id=866357041 instance=ExtResource("14_q55b1")]
+transform = Transform3D(-0.7963015, 0, -0.228765, 0, 0.8285104, 0, 0.228765, 0, -0.7963015, -11.887842, 0.011235278, -5.809845)
+
+[node name="Env_Moss_03_2" parent="Scatter" unique_id=1886349712 instance=ExtResource("15_seilp")]
+transform = Transform3D(-0.6229386, 0, 0.3534995, 0, 0.7162502, 0, -0.3534995, 0, -0.6229386, -0.49995047, 0.012880873, -14.579635)
+
+[node name="Env_Grunge_01_3" parent="Scatter" unique_id=686948618 instance=ExtResource("12_nwrdg")]
+transform = Transform3D(0.6332735, 0, 0.56338257, 0, 0.8476056, 0, -0.56338257, 0, 0.6332735, -0.47852892, 0.01312544, -8.839344)
+
+[node name="Env_Grunge_03_3" parent="Scatter" unique_id=827855088 instance=ExtResource("13_o7lbc")]
+transform = Transform3D(-0.25159082, 0, -0.5000604, 0, 0.5597842, 0, 0.5000604, 0, -0.25159082, 13.064384, 0.015780695, 13.334497)
+
+[node name="Env_Moss_01_3" parent="Scatter" unique_id=1634556169 instance=ExtResource("14_q55b1")]
+transform = Transform3D(-0.40166765, 0, -0.5716969, 0, 0.6986947, 0, 0.5716969, 0, -0.40166765, 2.990717, 0.01598184, 1.5407925)
+
+[node name="Env_Moss_03_3" parent="Scatter" unique_id=498491378 instance=ExtResource("15_seilp")]
+transform = Transform3D(0.45398766, 0, -0.4221833, 0, 0.61995447, 0, 0.4221833, 0, 0.45398766, 6.299309, 0.017434664, -14.795279)
+
+[node name="Env_Grunge_01_4" parent="Scatter" unique_id=416282093 instance=ExtResource("12_nwrdg")]
+transform = Transform3D(-0.10031213, 0, -0.7701992, 0, 0.77670413, 0, 0.7701992, 0, -0.10031213, 9.57489, 0.017533192, -11.720809)
+
+[node name="Env_Grunge_03_4" parent="Scatter" unique_id=1035734357 instance=ExtResource("13_o7lbc")]
+transform = Transform3D(-0.8365629, 0, -0.110028304, 0, 0.8437675, 0, 0.110028304, 0, -0.8365629, 8.255623, 0.018147513, -8.247572)
+
+[node name="Env_Plant_Grass_Patch_01_1" parent="Scatter" unique_id=1788959099 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.59193796, 0, -0.09802773, 0, 0.6, 0, 0.09802773, 0, 0.59193796, 14.781021, -0.01375695, -7.9800224)
+
+[node name="Env_Plant_Grass_Patch_01_2" parent="Scatter" unique_id=1513259513 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.43312111, 0, -0.41521817, 0, 0.6, 0, 0.41521817, 0, 0.43312111, -16.920462, -0.01375695, -10.477518)
+
+[node name="Env_Plant_Grass_Patch_01_3" parent="Scatter" unique_id=866403739 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.5867838, 0, -0.12523872, 0, 0.6, 0, 0.12523872, 0, 0.5867838, 12.407665, -0.01375695, 4.1459827)
+
+[node name="Env_Plant_Grass_Patch_01_4" parent="Scatter" unique_id=82602476 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.53950137, 0, 0.26256108, 0, 0.6, 0, -0.26256108, 0, 0.53950137, 5.118534, -0.01375695, 2.6279163)
+
+[node name="Env_Plant_Grass_Patch_01_5" parent="Scatter" unique_id=2032312224 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.025415165, 0, -0.5994615, 0, 0.6, 0, 0.5994615, 0, 0.025415165, -0.10647011, -0.01375695, 2.5516453)
+
+[node name="Env_Plant_Grass_Patch_01_6" parent="Scatter" unique_id=2118083793 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.5021263, 0, 0.32843447, 0, 0.6, 0, -0.32843447, 0, 0.5021263, 2.820156, -0.01375695, 17.03901)
+
+[node name="Env_Plant_Grass_Patch_01_7" parent="Scatter" unique_id=95146541 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.45903686, 0, 0.3863744, 0, 0.6, 0, -0.3863744, 0, 0.45903686, 17.203094, -0.01375695, 3.1287994)
+
+[node name="Env_Plant_Grass_Patch_01_8" parent="Scatter" unique_id=858148348 instance=ExtResource("16_xj0i7")]
+transform = Transform3D(0.47667384, 0, 0.36439276, 0, 0.6, 0, -0.36439276, 0, 0.47667384, 5.4243107, -0.01375695, 0.23419952)
+
+[node name="Background" type="Node3D" parent="." unique_id=1748802154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
+
+[node name="Outer" type="MeshInstance3D" parent="Background" unique_id=694226481]
+mesh = SubResource("PlaneMesh_stt7k")
+
+[node name="Env_Rock_Cliff_06_1" parent="Background" unique_id=1433364139 instance=ExtResource("17_q76fa")]
+transform = Transform3D(3.8411026, 0, 0, 0, 0.43622565, 0, 0, 0, 0.275946, -0.06501195, 0.8333336, -20.916481)
+
+[node name="Env_Rock_Cliff_06_2" parent="Background" unique_id=770344509 instance=ExtResource("17_q76fa")]
+transform = Transform3D(-3.8411026, 0, -2.4123965e-08, 0, 0.43622565, 0, 3.3579985e-07, 0, -0.275946, 0.06501195, 0.8333336, 20.916481)
+
+[node name="Env_Rock_Cliff_06_3" parent="Background" unique_id=1401092117 instance=ExtResource("17_q76fa")]
+transform = Transform3D(-1.6789993e-07, 0, -0.275946, 0, 0.43622565, 0, 3.8411026, 0, -1.20619825e-08, 20.916481, 0.8333336, -0.06501195)
+
+[node name="Env_Rock_Cliff_06_4" parent="Background" unique_id=1280957555 instance=ExtResource("17_q76fa")]
+transform = Transform3D(-1.6789993e-07, 0, 0.275946, 0, 0.43622565, 0, -3.8411026, 0, -1.20619825e-08, -20.916481, 0.8333336, 0.06501195)
+
+[node name="Prop_Tomb_Stone_01_1" parent="Background" unique_id=719598596 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(0.12129924, 0, -0.992616, 0, 1, 0, 0.992616, 0, 0.12129924, 24.916069, 0.03852175, 0.0013877631)
+
+[node name="Prop_Tomb_Stone_02_1" parent="Background" unique_id=1706525873 instance=ExtResource("19_bh20k")]
+transform = Transform3D(-0.4002341, 0, -0.91641295, 0, 1, 0, 0.91641295, 0, -0.4002341, 26.601881, -0.0022153521, 6.072289)
+
+[node name="Prop_Tomb_Stone_04_1" parent="Background" unique_id=20686623 instance=ExtResource("20_she4w")]
+transform = Transform3D(-0.2194728, 0, -0.9756186, 0, 1, 0, 0.9756186, 0, -0.2194728, 24.797915, 2.1473e-08, 11.935564)
+
+[node name="Prop_Tomb_Stone_Basic_01_1" parent="Background" unique_id=304575238 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(-0.7488986, 0, -0.66268456, 0, 1, 0, 0.66268456, 0, -0.7488986, 20.828346, 0.24427791, 16.599554)
+
+[node name="Prop_Tomb_Stone_01_2" parent="Background" unique_id=1430059270 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(-0.726214, 0, -0.6874687, 0, 1, 0, 0.6874687, 0, -0.726214, 17.047924, 0.03852175, 21.379656)
+
+[node name="Prop_Tomb_Stone_02_2" parent="Background" unique_id=758375231 instance=ExtResource("19_bh20k")]
+transform = Transform3D(-0.9523549, 0, -0.30499196, 0, 1, 0, 0.30499196, 0, -0.9523549, 10.650096, -0.0022153521, 22.116854)
+
+[node name="Prop_Tomb_Stone_04_2" parent="Background" unique_id=1530986728 instance=ExtResource("20_she4w")]
+transform = Transform3D(-0.9993433, 0, 0.036235116, 0, 1, 0, -0.036235116, 0, -0.9993433, 5.821087, 2.1473e-08, 25.456182)
+
+[node name="Prop_Tomb_Stone_Basic_01_2" parent="Background" unique_id=86513624 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(-0.9692639, 0, 0.2460233, 0, 1, 0, -0.2460233, 0, -0.9692639, 0.008077539, 0.24427791, 27.658426)
+
+[node name="Prop_Tomb_Stone_01_3" parent="Background" unique_id=1498374391 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(-0.9194972, 0, 0.3930965, 0, 1, 0, -0.3930965, 0, -0.9194972, -5.8107605, 0.03852175, 25.452423)
+
+[node name="Prop_Tomb_Stone_02_3" parent="Background" unique_id=798513229 instance=ExtResource("19_bh20k")]
+transform = Transform3D(-0.97343266, 0, 0.22897339, 0, 1, 0, -0.22897339, 0, -0.97343266, -12.22919, -0.0022153521, 25.389788)
+
+[node name="Prop_Tomb_Stone_04_3" parent="Background" unique_id=1348594721 instance=ExtResource("20_she4w")]
+transform = Transform3D(-0.83005476, 0, 0.5576819, 0, 1, 0, -0.5576819, 0, -0.83005476, -16.63424, 2.1473e-08, 20.870653)
+
+[node name="Prop_Tomb_Stone_Basic_01_3" parent="Background" unique_id=1503661312 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(-0.44511336, 0, 0.89547426, 0, 1, 0, -0.89547426, 0, -0.44511336, -20.437595, 0.24427791, 16.30886)
+
+[node name="Prop_Tomb_Stone_01_4" parent="Background" unique_id=378055289 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(-0.604188, 0, 0.7968418, 0, 1, 0, -0.7968418, 0, -0.604188, -23.78797, 0.03852175, 11.454162)
+
+[node name="Prop_Tomb_Stone_02_4" parent="Background" unique_id=1173684938 instance=ExtResource("19_bh20k")]
+transform = Transform3D(-0.33916152, 0, 0.9407281, 0, 1, 0, -0.9407281, 0, -0.33916152, -24.201721, -0.0022153521, 5.5222363)
+
+[node name="Prop_Tomb_Stone_04_4" parent="Background" unique_id=940971219 instance=ExtResource("20_she4w")]
+transform = Transform3D(-0.1012153, 0, 0.9948645, 0, 1, 0, -0.9948645, 0, -0.1012153, -24.938334, 2.1473e-08, 0.0072554294)
+
+[node name="Prop_Tomb_Stone_Basic_01_4" parent="Background" unique_id=19002577 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(0.24804842, 0, 0.9687476, 0, 1, 0, -0.9687476, 0, 0.24804842, -27.417688, 0.24427791, -6.2493634)
+
+[node name="Prop_Tomb_Stone_01_5" parent="Background" unique_id=283514928 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(0.6079486, 0, 0.79397637, 0, 1, 0, -0.79397637, 0, 0.6079486, -24.397522, 0.03852175, -11.750747)
+
+[node name="Prop_Tomb_Stone_02_5" parent="Background" unique_id=1122447679 instance=ExtResource("19_bh20k")]
+transform = Transform3D(0.7386183, 0, 0.6741239, 0, 1, 0, -0.6741239, 0, 0.7386183, -21.820972, -0.0022153521, -17.402504)
+
+[node name="Prop_Tomb_Stone_04_5" parent="Background" unique_id=1854936113 instance=ExtResource("20_she4w")]
+transform = Transform3D(0.8264287, 0, 0.5630414, 0, 1, 0, -0.5630414, 0, 0.8264287, -17.013855, 2.1473e-08, -21.320204)
+
+[node name="Prop_Tomb_Stone_Basic_01_5" parent="Background" unique_id=1083661665 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(0.94816, 0, 0.31779334, 0, 1, 0, -0.31779334, 0, 0.94816, -10.575258, 0.24427791, -21.940693)
+
+[node name="Prop_Tomb_Stone_01_6" parent="Background" unique_id=1790738612 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(0.8896313, 0, 0.45667952, 0, 1, 0, -0.45667952, 0, 0.8896313, -5.77638, 0.03852175, -25.314062)
+
+[node name="Prop_Tomb_Stone_02_6" parent="Background" unique_id=2088672074 instance=ExtResource("19_bh20k")]
+transform = Transform3D(0.99244964, 0, 0.12265267, 0, 1, 0, -0.12265267, 0, 0.99244964, 0.0016112954, -0.0022153521, -26.709595)
+
+[node name="Prop_Tomb_Stone_04_6" parent="Background" unique_id=1570356905 instance=ExtResource("20_she4w")]
+transform = Transform3D(0.9650088, 0, -0.2622176, 0, 1, 0, 0.2622176, 0, 0.9650088, 5.9114227, 2.1473e-08, -25.938787)
+
+[node name="Prop_Tomb_Stone_Basic_01_6" parent="Background" unique_id=1936666326 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(0.91425306, 0, -0.4051436, 0, 1, 0, 0.4051436, 0, 0.91425306, 10.512016, 0.24427791, -21.847624)
+
+[node name="Prop_Tomb_Stone_01_7" parent="Background" unique_id=952335941 instance=ExtResource("18_t2ujl")]
+transform = Transform3D(0.69731575, 0, -0.7167641, 0, 1, 0, 0.7167641, 0, 0.69731575, 17.659527, 0.03852175, -22.142124)
+
+[node name="Prop_Tomb_Stone_02_7" parent="Background" unique_id=101982317 instance=ExtResource("19_bh20k")]
+transform = Transform3D(0.4406797, 0, -0.8976644, 0, 1, 0, 0.8976644, 0, 0.4406797, 21.373459, -0.0022153521, -17.044168)
+
+[node name="Prop_Tomb_Stone_04_7" parent="Background" unique_id=2141170663 instance=ExtResource("20_she4w")]
+transform = Transform3D(0.58850634, 0, -0.8084926, 0, 1, 0, 0.8084926, 0, 0.58850634, 25.11784, 2.1473e-08, -12.103196)
+
+[node name="Prop_Tomb_Stone_Basic_01_7" parent="Background" unique_id=1969303181 instance=ExtResource("21_mkj6c")]
+transform = Transform3D(0.09770246, 0, -0.99521565, 0, 1, 0, 0.99521565, 0, 0.09770246, 24.368805, 0.24427791, -5.5705004)
+
+[node name="Env_Tree_Dead_04_1" parent="Background" unique_id=50250327 instance=ExtResource("22_khd2k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.421154, 0.8958255, -24.004826)
+
+[node name="Env_Tree_Dead_04_2" parent="Background" unique_id=198287864 instance=ExtResource("22_khd2k")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 26.995174, 0.8958255, -20.578846)
+
+[node name="Env_Tree_Dead_04_3" parent="Background" unique_id=1301102891 instance=ExtResource("22_khd2k")]
+transform = Transform3D(-0.9396926, 0, -0.34202015, 0, 1, 0, 0.34202015, 0, -0.9396926, -28.542286, 0.8958255, 22.20251)
+
+[node name="Env_Tree_Dead_04_4" parent="Background" unique_id=1289422907 instance=ExtResource("22_khd2k")]
+transform = Transform3D(0.4999999, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, 0.4999999, 25.293602, 0.8958255, 26.498882)
+
+[node name="Bld_Wall_Window_Huge_02_1" parent="Background" unique_id=174883828 instance=ExtResource("23_cdkby")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7499957, 0, -30)
+
+[node name="Bld_Ruin_02_1" parent="Background" unique_id=917901769 instance=ExtResource("24_0mphu")]
+transform = Transform3D(1.2216004, 0, 0.44462615, 0, 1.3, 0, -0.44462615, 0, 1.2216004, -12.108589, 0.05715306, -28.972435)
+
+[node name="Bld_Ruin_01_1" parent="Background" unique_id=1821905722 instance=ExtResource("25_gpbym")]
+transform = Transform3D(1.2216004, 0, -0.44462615, 0, 1.3, 0, 0.44462615, 0, 1.2216004, 11.12133, 0.009464995, -28.54547)
+
+[node name="Prop_Crypt_01_1" parent="Background" unique_id=1769956863 instance=ExtResource("26_vhmex")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 30, 0.08007984, 4)

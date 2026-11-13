@@ -1,0 +1,10 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/arena/Arena.tscn" id="1_arena"]
+
+[node name="ArenaExperimentSquad8" instance=ExtResource("1_arena")]
+Mode = 1
+SquadSize = 8
+RoundsPerTactic = 12
+BotHealth = 500.0
+ReportSuffix = "_squad8"

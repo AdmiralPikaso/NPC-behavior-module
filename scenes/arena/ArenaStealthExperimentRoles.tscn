@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/arena/Arena.tscn" id="1_arena"]
+
+[node name="ArenaStealthExperimentRoles" instance=ExtResource("1_arena")]
+Mode = 1
+RoundsPerTactic = 20
+RoundTimeout = 180.0
+OnlyTactic = 4
+Stealth = true
+ReportSuffix = "_roles"

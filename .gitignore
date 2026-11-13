@@ -1,0 +1,19 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# .NET / IDE
+.vs/
+.idea/
+.vscode/
+*.csproj.user
+bin/
+obj/
+
+# Платные ассеты Synty POLYGON Dark Fantasy не кладём в git: 223 МБ, лицензия запрещает публиковать исходники.
+# Пакет восстанавливается копированием Assets/Synty из архива POLYGON_Dark_Fantasy_Godot_4_6_2 в assets/Synty.
+/assets/Synty/
+
+# Персонажи Dark Fantasy собираются из платных моделей Synty (см. README, «Персонажи»):
+# tools/godot/export_character_parts.gd + tools/blender/build_character.py -- --darkfantasy
+/assets/characters/darkfantasy/

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://snclgvw3yp53"]
+
+[ext_resource type="PackedScene" path="res://scenes/arena/Arena.tscn" id="1_arena"]
+
+[node name="ArenaStealthPlay" unique_id=536271674 instance=ExtResource("1_arena")]
+RoundTimeout = 300.0
+Stealth = true

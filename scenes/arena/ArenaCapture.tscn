@@ -1,0 +1,16 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/arena/Arena.tscn" id="1_arena"]
+[ext_resource type="Script" path="res://src/Common/Debug/CaptureCamera.cs" id="2_cam"]
+
+[node name="ArenaCapture" instance=ExtResource("1_arena")]
+Mode = 1
+RoundsPerTactic = 1
+OnlyTactic = 2
+SaveReport = false
+
+[node name="CaptureCam" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34, 14)
+fov = 60.0
+script = ExtResource("2_cam")
+LookTarget = Vector3(0, 0, 1)

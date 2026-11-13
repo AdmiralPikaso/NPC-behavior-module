@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/test/TestLevel.tscn" id="1_level"]
+[ext_resource type="Script" path="res://src/Common/Debug/CaptureCamera.cs" id="2_cam"]
+
+[node name="ShowcaseCapture" type="Node3D"]
+
+[node name="Level" parent="." instance=ExtResource("1_level")]
+
+[node name="CaptureCam" type="Camera3D" parent="." node_paths=PackedStringArray("Follow")]
+fov = 60.0
+script = ExtResource("2_cam")
+Follow = NodePath("../Level/Mage")
+Offset = Vector3(-5, 3, 4)

@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/test/TestLevel.tscn" id="1_level"]
+[ext_resource type="Script" path="res://src/Common/Debug/InputScript.cs" id="2_input"]
+
+[node name="PlayerCapture" type="Node3D"]
+
+[node name="Level" parent="." instance=ExtResource("1_level")]
+
+[node name="InputScript" type="Node" parent="."]
+script = ExtResource("2_input")
+Steps = PackedStringArray("0.5 press move_forward", "2 press run", "3.5 release run", "3.5 press sprint", "4.5 release sprint", "4.5 release move_forward", "4.8 tap jump", "5.8 tap crouch", "6.2 press move_forward", "7.4 release move_forward", "7.6 tap crouch", "8 mouse 204 -20", "8.1 mouse 204 -20", "8.2 mouse 204 -20", "8.3 mouse 204 -20", "8.4 mouse 204 -20", "8.8 press aim", "9.2 press move_left", "9.3 tap fire", "10.2 tap fire", "10.8 release move_left", "10.8 press move_right", "11.1 press fire", "11.25 release fire", "12 tap fire", "12.5 release move_right", "13 release aim", "13.2 press move_forward", "13.4 press run", "13.6 tap jump", "14.6 release run", "14.6 release move_forward")

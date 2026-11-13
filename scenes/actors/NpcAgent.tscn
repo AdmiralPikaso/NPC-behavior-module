@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://src/Ai/Nodes/NpcAgent.cs" id="1_npc"]
+[ext_resource type="PackedScene" path="res://assets/characters/darkfantasy/DarkFantasyCharacters.glb" id="2_model"]
+[ext_resource type="Script" path="res://src/Common/Visual/CharacterSkin.cs" id="5_skin"]
+[ext_resource type="Script" path="res://src/Common/Animation/LocomotionDriver.cs" id="3_loco"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_body"]
+radius = 0.35
+height = 1.8
+
+[node name="NpcAgent" type="CharacterBody3D" groups=["npc"]]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_npc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_body")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Model" parent="Visual" instance=ExtResource("2_model")]
+script = ExtResource("5_skin")
+
+[node name="LocomotionDriver" type="Node" parent="."]
+script = ExtResource("3_loco")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.7
+path_height_offset = 0.5
+target_desired_distance = 0.5
+radius = 0.4
+debug_enabled = true
+
+[node name="DebugLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15, 0)
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0.85, 0.4, 1)
+font_size = 40
+outline_size = 8
+text = "NPC"
